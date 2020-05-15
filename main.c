@@ -11,5 +11,12 @@ int main()
 
 int suma_digitos(int n1)
 {
-	return((n1%10)+digitos(n1/10)); //caso recursivo
+	if(n1<10)
+	{
+		return n1;
+	}
+	else
+	{
+		return((n1%10)+digitos(n1/10)); //caso recursivo
+	}
 }
