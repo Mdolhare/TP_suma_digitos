@@ -3,24 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
-/* 
- * File:   main.c
- * Author: mateo
- *
- * Created on May 16, 2020, 3:27 PM
- */
-
 #include <stdio.h>
 #include "numero.h"
 #include "funcion.h"
 
-int main()
+
+int suma_digitos(int n1)
 {
-	int c = suma_digitos(NUM);
-    printf("%d\n",c);//imprime resultado
-	return 0;
+	if(n1<10)
+	{
+		return n1;
+	}
+	else
+	{
+		return((n1%10)+suma_digitos(n1/10)); //caso recursivo
+	}
 }
-
-
-

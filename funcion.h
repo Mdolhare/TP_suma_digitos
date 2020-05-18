@@ -5,22 +5,19 @@
  */
 
 /* 
- * File:   main.c
+ * File:   funcion.h
  * Author: mateo
  *
- * Created on May 16, 2020, 3:27 PM
+ * Created on May 17, 2020, 4:41 PM
  */
 
-#include <stdio.h>
-#include "numero.h"
-#include "funcion.h"
-
-int main()
-{
-	int c = suma_digitos(NUM);
-    printf("%d\n",c);//imprime resultado
-	return 0;
-}
+#ifndef FUNCION_H
+#define FUNCION_H
 
 
+int suma_digitos(int n1);
+
+
+
+#endif /* FUNCION_H */
 

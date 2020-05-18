@@ -5,22 +5,17 @@
  */
 
 /* 
- * File:   main.c
+ * File:   numero.h
  * Author: mateo
  *
- * Created on May 16, 2020, 3:27 PM
+ * Created on May 17, 2020, 5:23 PM
  */
 
-#include <stdio.h>
-#include "numero.h"
-#include "funcion.h"
+#ifndef NUMERO_H
+#define NUMERO_H
 
-int main()
-{
-	int c = suma_digitos(NUM);
-    printf("%d\n",c);//imprime resultado
-	return 0;
-}
+#define NUM 30
 
 
+#endif /* NUMERO_H */
 
